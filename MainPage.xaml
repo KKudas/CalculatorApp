@@ -30,134 +30,171 @@
                    FontSize="75"
                    Margin="15,0"/>
 
-            <Button Text="C"
-                    Grid.Row="1"
+            <Border Grid.Row="1"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    BackgroundColor="DimGrey"
-                    FontSize="25"
-                    CornerRadius="1"
-                    />
+                    Stroke="Black">
+                <Button Text="C"
+                        BackgroundColor="DimGrey"
+                        FontSize="25"
+                        CornerRadius="1"
+                        Clicked="DeleteAll"
+                        />
+            </Border>
 
-            <Button Text="DEL"
-                    Grid.Row="1"
+            <Border Grid.Row="1"
                     Grid.Column="2"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="DEL"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="/"
-                    Grid.Row="1"
+            <Border Grid.Row="1"
                     Grid.Column="3"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="Orange"/>
+                    Stroke="Black">
+                <Button Text="/"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="Orange"/>
+            </Border>
 
-            <Button Text="7"
-                    Grid.Row="2"
+            <Border Grid.Row="2"
                     Grid.Column="0"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="7"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="8"
-                    Grid.Row="2"
+            <Border Grid.Row="2"
                     Grid.Column="1"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="8"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="9"
-                    Grid.Row="2"
+            <Border Grid.Row="2"
                     Grid.Column="2"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="9"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="X"
-                    Grid.Row="2"
+            <Border Grid.Row="2"
                     Grid.Column="3"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="Orange"/>
-            
-            <Button Text="4"
-                    Grid.Row="3"
+                    Stroke="Black">
+                <Button Text="X"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="Orange"/>
+            </Border>
+
+            <Border Grid.Row="3"
                     Grid.Column="0"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="4"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="5"
-                    Grid.Row="3"
+            <Border Grid.Row="3"
                     Grid.Column="1"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="5"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="6"
-                    Grid.Row="3"
+            <Border Grid.Row="3"
                     Grid.Column="2"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="6"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="-"
-                    Grid.Row="3"
+            <Border Grid.Row="3"
                     Grid.Column="3"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="Orange"/>
-            
-            <Button Text="1"
-                    Grid.Row="4"
+                    Stroke="Black">
+                <Button Text="-"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="Orange"/>
+            </Border>
+
+            <Border Grid.Row="4"
                     Grid.Column="0"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="1"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="2"
-                    Grid.Row="4"
+            <Border Grid.Row="4"
                     Grid.Column="1"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="2"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="3"
-                    Grid.Row="4"
+            <Border Grid.Row="4"
                     Grid.Column="2"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="3"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="+"
-                    Grid.Row="4"
+            <Border Grid.Row="4"
                     Grid.Column="3"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="Orange"/>
-            
-            <Button Text="0"
-                    Grid.Row="5"
+                    Stroke="Black">
+                <Button Text="+"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="Orange"/>
+            </Border>
+
+            <Border Grid.Row="5"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="0"
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="."
-                    Grid.Row="5"
+            <Border Grid.Row="5"
                     Grid.Column="2"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="DimGrey"/>
+                    Stroke="Black">
+                <Button Text="."
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="DimGrey"/>
+            </Border>
 
-            <Button Text="="
-                    Grid.Row="5"
+            <Border Grid.Row="5"
                     Grid.Column="3"
-                    FontSize="25"
-                    CornerRadius="1"
-                    BackgroundColor="Orange"/>
+                    Stroke="Black">
+                <Button Text="="
+                        FontSize="25"
+                        CornerRadius="1"
+                        BackgroundColor="Orange"/>
+            </Border>
         </Grid>
 
     </StackLayout>
