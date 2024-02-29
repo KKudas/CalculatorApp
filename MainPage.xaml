@@ -20,20 +20,24 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="0"
+            <Label x:Name="Screen"
+                   Text="0"
                    Grid.Row="0"
                    Grid.Column="0"
                    Grid.ColumnSpan="5"
                    TextColor="White"
+                   LineBreakMode="WordWrap"
                    HorizontalTextAlignment="End"
                    VerticalTextAlignment="Center"
                    FontSize="75"
                    Margin="15,0"/>
 
+            <!--Delete text-->
             <Border Grid.Row="1"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Stroke="Black">
+
                 <Button Text="C"
                         BackgroundColor="DimGrey"
                         FontSize="25"
@@ -42,132 +46,161 @@
                         />
             </Border>
 
+            <!--Backspace-->
             <Border Grid.Row="1"
                     Grid.Column="2"
                     Stroke="Black">
                 <Button Text="DEL"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Delete"/>
             </Border>
 
+            <!--Divide-->
             <Border Grid.Row="1"
                     Grid.Column="3"
                     Stroke="Black">
                 <Button Text="/"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="Orange"/>
+                        BackgroundColor="Orange"
+                        Clicked="Divide"/>
             </Border>
 
+            <!--#7-->
             <Border Grid.Row="2"
                     Grid.Column="0"
                     Stroke="Black">
                 <Button Text="7"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button7"/>
             </Border>
 
+            <!--#8-->
             <Border Grid.Row="2"
                     Grid.Column="1"
                     Stroke="Black">
                 <Button Text="8"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button8"/>
             </Border>
 
+            <!--#9-->
             <Border Grid.Row="2"
                     Grid.Column="2"
                     Stroke="Black">
                 <Button Text="9"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button9"/>
             </Border>
 
+            <!--Multiply-->
             <Border Grid.Row="2"
                     Grid.Column="3"
                     Stroke="Black">
                 <Button Text="X"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="Orange"/>
+                        BackgroundColor="Orange"
+                        Clicked="Multiply"/>
             </Border>
 
+            <!--#4-->
             <Border Grid.Row="3"
                     Grid.Column="0"
                     Stroke="Black">
                 <Button Text="4"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button4"/>
             </Border>
 
+            <!--#5-->
             <Border Grid.Row="3"
                     Grid.Column="1"
                     Stroke="Black">
                 <Button Text="5"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button5"/>
             </Border>
 
+            <!--#6-->
             <Border Grid.Row="3"
                     Grid.Column="2"
                     Stroke="Black">
                 <Button Text="6"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button6"/>
             </Border>
 
+            <!--Subtract-->
             <Border Grid.Row="3"
                     Grid.Column="3"
                     Stroke="Black">
                 <Button Text="-"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="Orange"/>
+                        BackgroundColor="Orange"
+                        Clicked="Subtract"/>
             </Border>
 
+            <!--#1-->
             <Border Grid.Row="4"
                     Grid.Column="0"
                     Stroke="Black">
                 <Button Text="1"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button1"/>
             </Border>
 
+            <!--#2-->
             <Border Grid.Row="4"
                     Grid.Column="1"
                     Stroke="Black">
                 <Button Text="2"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button2"/>
             </Border>
 
+            <!--#3-->
             <Border Grid.Row="4"
                     Grid.Column="2"
                     Stroke="Black">
                 <Button Text="3"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button3"/>
             </Border>
 
+            <!--Addition-->
             <Border Grid.Row="4"
                     Grid.Column="3"
                     Stroke="Black">
                 <Button Text="+"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="Orange"/>
+                        BackgroundColor="Orange"
+                        Clicked="Add"/>
             </Border>
 
+            <!--#0-->
             <Border Grid.Row="5"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
@@ -175,25 +208,30 @@
                 <Button Text="0"
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="Button0"/>
             </Border>
 
+            <!--Decimal-->
             <Border Grid.Row="5"
                     Grid.Column="2"
                     Stroke="Black">
                 <Button Text="."
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="DimGrey"/>
+                        BackgroundColor="DimGrey"
+                        Clicked="ToDecimal"/>
             </Border>
 
+            <!--Equals-->
             <Border Grid.Row="5"
                     Grid.Column="3"
                     Stroke="Black">
                 <Button Text="="
                         FontSize="25"
                         CornerRadius="1"
-                        BackgroundColor="Orange"/>
+                        BackgroundColor="Orange"
+                        Clicked="Equals"/>
             </Border>
         </Grid>
 
