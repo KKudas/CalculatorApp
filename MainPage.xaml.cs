@@ -7,8 +7,7 @@ namespace Calculator
         string operand1 = string.Empty;
         string operand2 = string.Empty;
         int operation = 0;
-        double result = 0;
-        double maxDecimal;
+        decimal result = 0m;
 
         public MainPage()
         {
@@ -28,7 +27,7 @@ namespace Calculator
                     Screen.Text += buttonNumber;
                 }
             }
-
+            operand2 = string.Empty;
             SemanticScreenReader.Announce(Screen.Text);
         }
 
@@ -36,6 +35,7 @@ namespace Calculator
         private void DeleteAll(object sender, EventArgs e)
         {
             operand1 = string.Empty;
+            operand2 = string.Empty;
             operation = 0;
             Screen.Text = $"0";
             SemanticScreenReader.Announce(Screen.Text);
@@ -47,6 +47,7 @@ namespace Calculator
             {
                 Screen.Text = "0";
                 operand1 = string.Empty;
+                operand2 = string.Empty;
                 operation = 0;
             }
             else if (Screen.Text.Length > 1)
@@ -70,12 +71,18 @@ namespace Calculator
 
         private void Equals(object sender, EventArgs e)
         {
+            if (operand2 == string.Empty)
+            {
+                operand2 = Screen.Text;
+            }
+
             switch(operation)
             {
                 case 1: //Division
                     if (!(Screen.Text.Equals("0"))){
-                        operand1 = Convert.ToString(Convert.ToDouble(operand1) / Convert.ToDouble(Screen.Text));
-                        Screen.Text = operand1;
+                        result = Convert.ToDecimal(operand1) / Convert.ToDecimal(operand2);
+                        operand1 = result.ToString();
+                        Screen.Text = result.ToString();
                     } else
                     {
                         Screen.Text = "Error";
@@ -83,20 +90,20 @@ namespace Calculator
                         operation = 0;
                     }
                     break;
-                case 2: //Subtraction
-                    operand1 = Convert.ToString(Convert.ToDouble(operand1) - Convert.ToDouble(Screen.Text));
-                    Screen.Text = operand1;
+                case 2: //Subtraction 
+                    result = Convert.ToDecimal(operand1) - Convert.ToDecimal(operand2);
+                    operand1 = result.ToString();
+                    Screen.Text = result.ToString();
                     break;
-                case 3: //Addition
-                    result = Convert.ToDouble(operand1) + Convert.ToDouble(Screen.Text);
-                    operand1 = result.ToString("F2");
-                    
-                    //operand1 = Convert.ToString(Convert.ToDouble(operand1) + Convert.ToDouble(Screen.Text));
-                    Screen.Text = operand1;
+                case 3: //Addition 
+                    result = Convert.ToDecimal(operand1) + Convert.ToDecimal(operand2);
+                    operand1 = result.ToString();
+                    Screen.Text = result.ToString();
                     break;
                 case 4: //Multiply
-                    operand1 = Convert.ToString(Convert.ToDouble(operand1) * Convert.ToDouble(Screen.Text));
-                    Screen.Text = operand1;
+                    result = Convert.ToDecimal(operand1) * Convert.ToDecimal(operand2);
+                    operand1 = result.ToString();
+                    Screen.Text = result.ToString("0.##");
                     break;
 
             }
