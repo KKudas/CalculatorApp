@@ -43,6 +43,8 @@
                         FontSize="25"
                         CornerRadius="1"
                         Clicked="DeleteAll"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"
                         />
             </Border>
 
@@ -54,7 +56,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Delete"/>
+                        Clicked="Delete"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--Divide-->
@@ -65,7 +69,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="Orange"
-                        Clicked="Divide"/>
+                        Clicked="Divide"
+                        Pressed="Button_Pressed1"
+                        Released="Button_Released1"/>
             </Border>
 
             <!--#7-->
@@ -76,7 +82,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button7"/>
+                        Clicked="Button7"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--#8-->
@@ -87,7 +95,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button8"/>
+                        Clicked="Button8"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--#9-->
@@ -98,7 +108,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button9"/>
+                        Clicked="Button9"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--Multiply-->
@@ -109,7 +121,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="Orange"
-                        Clicked="Multiply"/>
+                        Clicked="Multiply"
+                        Pressed="Button_Pressed1"
+                        Released="Button_Released1"/>
             </Border>
 
             <!--#4-->
@@ -120,18 +134,23 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button4"/>
+                        Clicked="Button4"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--#5-->
             <Border Grid.Row="3"
                     Grid.Column="1"
-                    Stroke="Black">
+                    Stroke="Black"
+                    x:Name="btn">
                 <Button Text="5"
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button5"/>
+                        Clicked="Button5"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--#6-->
@@ -142,7 +161,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button6"/>
+                        Clicked="Button6"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--Subtract-->
@@ -153,7 +174,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="Orange"
-                        Clicked="Subtract"/>
+                        Clicked="Subtract"
+                        Pressed="Button_Pressed1"
+                        Released="Button_Released1"/>
             </Border>
 
             <!--#1-->
@@ -164,7 +187,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button1"/>
+                        Clicked="Button1"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--#2-->
@@ -175,7 +200,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button2"/>
+                        Clicked="Button2"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--#3-->
@@ -186,7 +213,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button3"/>
+                        Clicked="Button3"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--Addition-->
@@ -197,7 +226,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="Orange"
-                        Clicked="Add"/>
+                        Clicked="Add"
+                        Pressed="Button_Pressed1"
+                        Released="Button_Released1"/>
             </Border>
 
             <!--#0-->
@@ -209,7 +240,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="Button0"/>
+                        Clicked="Button0"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--Decimal-->
@@ -220,7 +253,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="DimGrey"
-                        Clicked="ToDecimal"/>
+                        Clicked="ToDecimal"
+                        Pressed="Button_Pressed"
+                        Released="Button_Released"/>
             </Border>
 
             <!--Equals-->
@@ -231,7 +266,9 @@
                         FontSize="25"
                         CornerRadius="1"
                         BackgroundColor="Orange"
-                        Clicked="Equals"/>
+                        Clicked="Equals"
+                        Pressed="Button_Pressed1"
+                        Released="Button_Released1"/>
             </Border>
         </Grid>
 
